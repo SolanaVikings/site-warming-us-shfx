@@ -1,0 +1,60 @@
+# warming us — Complete Site Content
+
+> Keep you warm all year round
+
+Website: https://warming-us-shfx.onrender.com
+
+## Pages
+
+- [About](https://warming-us-shfx.onrender.com/about.html)
+- [Index](https://warming-us-shfx.onrender.com/)
+- [Contact](https://warming-us-shfx.onrender.com/contact.html)
+- [Services](https://warming-us-shfx.onrender.com/services.html)
+
+---
+
+## About
+
+started 2020 fully insured cardiff area
+
+## Services
+
+heating, boiler fitting fixing gas plumbing
+
+## Contact Information
+
+- **Name**: see smoth
+- **Email**: kenellbt1@gmail.com
+- **Phone**: 
+
+## Site Content
+
+### About
+
+- **description**: started 2020 fully insured cardiff area
+
+### About_page
+
+- **description**: started 2020 fully insured cardiff area
+- **headline**: About warming us
+
+### Contact
+
+- **email**: kenellbt1@gmail.com
+
+### Contact_page
+
+- **description**: 123 mn
+- **headline**: Get in Touch
+
+### Hero
+
+- **cta_text**: book a call
+- **headline**: Keep you warm all year round
+- **tagline**: started 2020 fully insured cardiff area
+
+### Services_page
+
+- **description**: heating, boiler fitting fixing gas plumbing
+- **title**: Our Services
+
