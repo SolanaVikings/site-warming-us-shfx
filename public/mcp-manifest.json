@@ -1,0 +1,9 @@
+{
+  "name": "warming us",
+  "description": "Keep you warm all year round",
+  "url": "https://warming-us-shfx.onrender.com/mcp",
+  "transport": {
+    "type": "http",
+    "url": "https://warming-us-shfx.onrender.com/mcp"
+  }
+}
