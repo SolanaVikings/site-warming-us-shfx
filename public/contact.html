@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Warming Us – Cardiff Heating & Gas Plumbing</title>
+  <meta name="description" content="Get in touch with Warming Us. Book a call for heating, boiler fitting, gas and plumbing services across Cardiff. Fully insured since 2020.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://warming-us-shfx.onrender.com/contact.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* ── RESET & BASE ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #0A0A0A;
+      color: #F5F0EB;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* ── TOKENS ── */
+    :root {
+      --bg: #0A0A0A;
+      --bg-alt: #111111;
+      --text: #F5F0EB;
+      --text-muted: #7A736B;
+      --accent: #E07B2A;
+      --accent-hover: #F28C3A;
+      --border: #1E1E1E;
+      --radius: 4px;
+      --container: 1280px;
+    }
+
+    /* ── CONTAINER ── */
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin-inline: auto;
+      padding-inline: 2rem;
+    }
+
+    /* ── BUTTON ── */
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 48px;
+      padding-inline: 28px;
+      background-color: var(--accent);
+      color: #000;
+      font-family: 'Unbounded', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      white-space: nowrap;
+    }
+    .btn-cta:hover, .btn-cta:focus-visible {
+      background-color: var(--accent-hover);
+      outline: none;
+    }
+
+    /* ── NAV ── */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: rgba(10, 10, 10, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      height: 72px;
+    }
+    .nav-logo {
+      font-family: 'Unbounded', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.02em;
+      flex-shrink: 0;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-left: auto;
+    }
+    .nav-links a {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #fff;
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-links a[aria-current="page"] { color: var(--accent); }
+    .nav-links a[aria-current="page"]::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+    .nav-cta { margin-left: 1rem; }
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-left: auto;
+      padding: 4px;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    /* ── MARQUEE ── */
+    .marquee-bar {
+      background-color: var(--accent);
+      overflow: hidden;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .marquee-track {
+      display: flex;
+      gap: 3rem;
+      animation: marquee 28s linear infinite;
+      width: max-content;
+    }
+    .marquee-track span {
+      font-family: 'Unbounded', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #000;
+      white-space: nowrap;
+    }
+    .marquee-track span.dot {
+      color: rgba(0,0,0,0.4);
+      font-size: 0.5rem;
+    }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .marquee-track { animation: none; }
+    }
+
+    /* ── SUBPAGE HEADER ── */
+    .subpage-header {
+      background-color: var(--bg-alt);
+      padding: 180px 0 80px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .subpage-header .eyebrow {
+      font-family: 'Unbounded', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+    .subpage-header h1 {
+      font-family: 'Unbounded', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+    .accent-rule {
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      margin: 0 auto 1.5rem;
+      border-radius: 2px;
+    }
+    .subpage-header p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin-inline: auto;
+      line-height: 1.7;
+    }
+
+    /* ── CONTACT SECTION ── */
+    .contact-section {
+      padding: 120px 0;
+      background-color: var(--bg);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    /* ── CONTACT INFO PANEL ── */
+    .contact-info-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+    .contact-info-intro h2 {
+      font-family: 'Unbounded', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .contact-info-intro p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    /* ── ADDRESS BLOCK ── */
+    address { font-style: normal; }
+    .contact-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      transition: border-color 0.2s;
+    }
+    .contact-card:hover { border-color: var(--accent); }
+    .contact-card-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(224, 123, 42, 0.12);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-card-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .contact-card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .contact-card-label {
+      font-family: 'Unbounded', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--text-muted);
+    }
+    .contact-card-value {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .contact-card-value a {
+      color: var(--text);
+      transition: color 0.2s;
+    }
+    .contact-card-value a:hover { color: var(--accent); }
+    .contact-card-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.15rem;
+    }
+
+    /* ── HOURS BLOCK ── */
+    .hours-block {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+    }
+    .hours-block h3 {
+      font-family: 'Unbounded', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+    .hours-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+    .hours-day { color: var(--text-muted); }
+    .hours-time { color: var(--text); font-weight: 600; }
+    .hours-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 0.75rem 0;
+    }
+    .hours-emergency {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 1rem;
+    }
+    .hours-emergency strong { color: var(--accent); }
+
+    /* ── CONTACT FORM ── */
+    .contact-form-panel {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 3rem;
+    }
+    .form-header {
+      margin-bottom: 2.5rem;
+    }
+    .form-header h2 {
+      font-family: 'Unbounded', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .form-header p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    label {
+      font-family: 'Unbounded', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+    }
+    input, select, textarea {
+      background: #0A0A0A;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.95rem;
+      padding: 14px 16px;
+      width: 100%;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+      -webkit-appearance: none;
+    }
+    input::placeholder, textarea::placeholder { color: var(--text-muted); }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(224, 123, 42, 0.12);
+    }
+    select {
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A736B' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 44px;
+    }
+    select option { background: #111; color: var(--text); }
+    textarea { resize: vertical; min-height: 130px; }
+    .form-submit {
+      width: 100%;
+      margin-top: 0.5rem;
+      height: 52px;
+      font-size: 0.8rem;
+    }
+    .form-note {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .form-note a { color: var(--accent); }
+
+    /* ── SUCCESS / ERROR STATES ── */
+    .form-feedback {
+      display: none;
+      padding: 1rem 1.25rem;
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .form-feedback.success {
+      background: rgba(224, 123, 42, 0.12);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+    }
+    .form-feedback.error {
+      background: rgba(220, 50, 50, 0.1);
+      border: 1px solid #dc3232;
+      color: #f87171;
+    }
+
+    /* ── CTA STRIP ── */
+    .cta-strip {
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 80px 0;
+    }
+    .cta-strip-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .cta-strip-text h2 {
+      font-family: 'Unbounded', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    .cta-strip-text p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 480px;
+    }
+    .cta-strip-actions {
+      display: flex;
+      gap: 1rem;
+      flex-shrink: 0;
+      align-items: center;
+    }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 48px;
+      padding-inline: 28px;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: 'Unbounded', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ── TRUST BAR ── */
+    .trust-bar {
+      padding: 60px 0;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .trust-bar-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .trust-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(224, 123, 42, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .trust-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .trust-item h3 {
+      font-family: 'Unbounded', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .trust-item p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      background-color: var(--bg-alt);
+      border-top: 1px solid var(--border);
+      padding-top: 60px;
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      padding-bottom: 60px;
+    }
+    .footer-brand { display: flex; flex-direction: column; gap: 1rem; }
+    .footer-logo { font-size: 1.1rem; }
+    .footer-tagline {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 280px;
+      line-height: 1.6;
+    }
+    .footer-email {
+      font-size: 0.85rem;
+      color: var(--accent);
+      transition: color 0.2s;
+    }
+    .footer-email:hover { color: var(--accent-hover); }
+    .footer-nav-col {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: flex-end;
+    }
+    .footer-nav {
+      display: flex;
+      gap: 2rem;
+    }
+    .footer-nav a {
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+    .footer-nav a:hover { color: var(--text); }
+    .footer-contact-link {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+    .footer-contact-link:hover { color: var(--accent); }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .footer-small {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .cta-strip-inner { flex-direction: column; align-items: flex-start; }
+      .trust-bar-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .subpage-header { padding: 140px 0 60px; }
+      .subpage-header h1 { font-size: 2rem; }
+      .nav-links, .nav-cta { display: none; }
+      .nav-links.open { display: flex; }
+      .nav-toggle { display: flex; }
+      .nav-inner { flex-wrap: wrap; height: auto; padding-block: 1rem; }
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        padding: 1.5rem 0 0.5rem;
+        border-top: 1px solid var(--border);
+        margin-left: 0;
+      }
+      .nav-links a { font-size: 0.85rem; }
+      .contact-form-panel { padding: 2rem 1.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .trust-bar-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .footer-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .footer-nav-col { align-items: flex-start; }
+      .footer-nav { flex-wrap: wrap; gap: 1rem; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .cta-strip-actions { flex-direction: column; width: 100%; }
+      .cta-strip-actions .btn-cta,
+      .cta-strip-actions .btn-outline { width: 100%; text-align: center; }
+      .contact-section { padding: 80px 0; }
+    }
+    @media (max-width: 480px) {
+      .subpage-header h1 { font-size: 1.6rem; }
+      .container { padding-inline: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-nav" role="banner">
+    <nav class="nav-inner container" aria-label="Main navigation">
+      <a href="./index.html" class="nav-logo" aria-label="Warming Us – Home">Warming Us</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <a href="./contact.html" class="btn-cta nav-cta">Book a Call</a>
+    </nav>
+  </header>
+
+  <!-- MARQUEE -->
+  <div class="marquee-bar" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Heating</span><span class="dot">◆</span>
+      <span>Boiler Fitting</span><span class="dot">◆</span>
+      <span>Boiler Repair</span><span class="dot">◆</span>
+      <span>Gas Plumbing</span><span class="dot">◆</span>
+      <span>Fully Insured</span><span class="dot">◆</span>
+      <span>Cardiff Area</span><span class="dot">◆</span>
+      <span>Since 2020</span><span class="dot">◆</span>
+      <span>Free Quotes</span><span class="dot">◆</span>
+      <span>Heating</span><span class="dot">◆</span>
+      <span>Boiler Fitting</span><span class="dot">◆</span>
+      <span>Boiler Repair</span><span class="dot">◆</span>
+      <span>Gas Plumbing</span><span class="dot">◆</span>
+      <span>Fully Insured</span><span class="dot">◆</span>
+      <span>Cardiff Area</span><span class="dot">◆</span>
+      <span>Since 2020</span><span class="dot">◆</span>
+      <span>Free Quotes</span><span class="dot">◆</span>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- SUBPAGE HEADER -->
+    <section class="subpage-header" aria-label="Contact page header">
+      <div class="container">
+        <p class="eyebrow">Get in Touch</p>
+        <h1 data-content="contact_page.headline">Get in Touch</h1>
+        <div class="accent-rule"></div>
+        <p data-content="contact_page.description">123 mn</p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" aria-label="Contact information and enquiry form">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- LEFT: INFO -->
+          <div class="contact-info-panel">
+            <div class="contact-info-intro">
+              <h2>Reach Out<br><span style="color: var(--accent);">Any Time</span></h2>
+              <p data-content="contact_page.cta_text">Whether you need an urgent boiler repair, a new installation, or just want some advice — drop us a message or give us a call. We cover Cardiff and the surrounding areas and aim to respond the same day.</p>
+            </div>
+
+            <address>
+              <div class="contact-cards">
+
+                <!-- PHONE -->
+                <div class="contact-card">
+                  <div class="contact-card-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 9.8 19.79 19.79 0 01.07 1.18 2 2 0 012.04 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                  </div>
+                  <div class="contact-card-body">
+                    <span class="contact-card-label">Phone</span>
+                    <span class="contact-card-value" data-content="contact_page.phone">
+                      <a href="tel:0000">0000 — Call to Book</a>
+                    </span>
+                    <span class="contact-card-note">Mon–Fri 8am–6pm, Sat 9am–2pm</span>
+                  </div>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="contact-card">
+                  <div class="contact-card-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div class="contact-card-body">
+                    <span class="contact-card-label">Email</span>
+                    <span class="contact-card-value" data-content="contact_page.email">
+                      <a href="mailto:kenellbt1@gmail.com">kenellbt1@gmail.com</a>
+                    </span>
+                    <span class="contact-card-note">We aim to reply within a few hours</span>
+                  </div>
+                </div>
+
+                <!-- ADDRESS -->
+                <div class="contact-card">
+                  <div class="contact-card-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                      <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                  </div>
+                  <div class="contact-card-body">
+                    <span class="contact-card-label">Location</span>
+                    <span class="contact-card-value" data-content="contact_page.address">Cardiff, Wales</span>
+                    <span class="contact-card-note">Covering Cardiff &amp; surrounding areas</span>
+                  </div>
+                </div>
+
+              </div>
+            </address>
+
+            <!-- HOURS -->
+            <div class="hours-block">
+              <h3 data-content="contact_page.hours_title">Working Hours</h3>
+              <div class="hours-list" data-content="contact_page.hours">
+                <div class="hours-row">
+                  <span class="hours-day">Monday – Friday</span>
+                  <span class="hours-time">8:00am – 6:00pm</span>
+                </div>
+                <div class="hours-divider"></div>
+                <div class="hours-row">
+                  <span class="hours-day">Saturday</span>
+                  <span class="hours-time">9:00am – 2:00pm</span>
+                </div>
+                <div class="hours-divider"></div>
+                <div class="hours-row">
+                  <span class="hours-day">Sunday</span>
+                  <span class="hours-time">By Appointment</span>
+                </div>
+              </div>
+              <p class="hours-emergency">
+                <strong>Urgent issue?</strong> Call us directly — we do our best to accommodate emergency callouts.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: FORM -->
+          <div class="contact-form-panel">
+            <div class="form-header">
+              <h2>Send an Enquiry</h2>
+              <p>Fill in the form below and we'll get back to you as soon as possible.</p>
+            </div>
+
+            <div class="form-feedback success" id="form-success" role="alert" aria-live="polite">
+              ✓ Message sent! We'll be in touch shortly.
+            </div>
+            <div class="form-feedback error" id="form-error" role="alert" aria-live="polite">
+              Something went wrong. Please email us directly at kenellbt1@gmail.com
+            </div>
+
+            <form
+              id="contact-form"
+              novalidate
+              aria-label="Contact enquiry form"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name <span aria-hidden="true" style="color:var(--accent)">*</span></label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first_name"
+                    placeholder="John"
+                    required
+                    autocomplete="given-name"
+                    aria-required="true"
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name <span aria-hidden="true" style="color:var(--accent)">*</span></label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last_name"
+                    placeholder="Smith"
+                    required
+                    autocomplete="family-name"
+                    aria-required="true"
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true" style="color:var(--accent)">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@example.com"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="07xxx xxxxxx"
+                  autocomplete="tel"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Required</label>
+                <select id="service" name="service" aria-label="Select a service">
+                  <option value="" disabled selected>Select a service…</option>
+                  <option value="heating">Heating</option>
+                  <option value="boiler-fitting">Boiler Fitting</option>
+                  <option value="boiler-repair">Boiler Repair / Fixing</option>
+                  <option value="gas-plumbing">Gas Plumbing</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span aria-hidden="true" style="color:var(--accent)">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us a bit about what you need — the more detail, the better…"
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-cta form-submit" aria-label="Send enquiry form">
+                Send Enquiry
+              </button>
+
+              <p class="form-note">
+                Or call us directly to book: <a href="tel:0000">0000</a>
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar" aria-label="Why choose Warming Us">
+      <div class="container">
+        <div class="trust-bar-grid">
+
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Fully Insured</h3>
+            <p>All our work is fully insured for your peace of mind, every single job.</p>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3>Fast Response</h3>
+            <p>Same-day responses and flexible scheduling across Cardiff.</p>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <h3>Free Quotes</h3>
+            <p>No obligation quotes on all heating, boiler, and gas work.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <section class="cta-strip" aria-label="Call to action — book a call">
+      <div class="container">
+        <div class="cta-strip-inner">
+          <div class="cta-strip-text">
+            <h2>Ready to Book?<br><span style="color:var(--accent)">We're One Call Away.</span></h2>
+            <p>Don't sit in the cold. Get a fast, friendly quote from Cardiff's trusted heating and gas specialists. Fully insured, established since 2020.</p>
+          </div>
+          <div class="cta-strip-actions">
+            <a href="tel:0000" class="btn-cta">Book a Call</a>
+            <a href="mailto:kenellbt1@gmail.com" class="btn-outline">Email Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+    <div class="footer-inner container">
+      <div class="footer-col footer-brand">
+        <a href="./index.html" class="nav-logo footer-logo" aria-label="Warming Us – Home">Warming Us</a>
+        <p class="footer-tagline">Keep you warm all year round.</p>
+        <a href="mailto:kenellbt1@gmail.com" class="footer-email">kenellbt1@gmail.com</a>
+      </div>
+      <div class="footer-col footer-nav-col">
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav" role="list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="mailto:kenellbt1@gmail.com" class="footer-contact-link">kenellbt1@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p class="footer-small">&copy; <time datetime="2024">2024</time> Warming Us. All rights reserved. Cardiff, Wales.</p>
+      <p class="footer-small">Fully insured heating &amp; gas plumbing specialists.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+  <script src="tracking.js"></script>
+
+  <script>
+    /* Mobile nav toggle */
+    (function () {
+      const toggle = document.querySelector('.nav-toggle');
+      const menu = document.getElementById('nav-menu');
+      if (!toggle || !menu) return;
+      toggle.addEventListener('click', function () {
+        const isOpen = menu.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    })();
+
+    /* Basic client-side form validation + submission placeholder */
+    (function () {
+      const form = document.getElementById('contact-form');
+      const successBox = document.getElementById('form-success');
+      const errorBox = document.getElementById('form-error');
+      if (!form) return;
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        successBox.style.display = 'none';
+        errorBox.style.display = 'none';
+
+        const firstName = form.first_name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
+
+        if (!firstName || !email || !message) {
+          errorBox.textContent = 'Please fill in all required fields.';
+          errorBox.style.display = 'block';
+          return;
+        }
+
+        const submitBtn = form.querySelector('[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending…';
+        submitBtn.disabled = true;
+
+        try {
+          /* If Supabase is configured via config.js / script.js, the
+             contact submission logic lives in script.js. Otherwise we
+             surface a graceful mailto fallback. */
+          if (typeof handleContactSubmit === 'function') {
+            await handleContactSubmit(new FormData(form));
+          }
+          successBox.style.display = 'block';
+          form.reset();
+        } catch (err) {
+          errorBox.style.display = 'block';
+        } finally {
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
