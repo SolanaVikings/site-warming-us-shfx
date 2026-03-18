@@ -724,7 +724,7 @@
       .nav-links, .nav-cta { display: none; }
       .nav-toggle { display: flex; }
 
-      .nav-links.is-open {
+      .nav-links.open {
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -737,7 +737,7 @@
         z-index: 999;
       }
 
-      .nav-links.is-open + .nav-cta { display: none; }
+      .nav-links.open + .nav-cta { display: none; }
 
       .subpage-header h1 { font-size: 2rem; }
     }
@@ -1022,7 +1022,7 @@
     const navMenu = document.querySelector('#nav-menu');
     if (navToggle && navMenu) {
       navToggle.addEventListener('click', function () {
-        const isOpen = navMenu.classList.toggle('is-open');
+        const isOpen = navMenu.classList.toggle('open');
         navToggle.setAttribute('aria-expanded', isOpen.toString());
       });
     }

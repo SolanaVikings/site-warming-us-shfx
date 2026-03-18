@@ -772,7 +772,7 @@
 
       .nav-links, .nav-cta { display: none; }
       .nav-toggle { display: flex; }
-      .nav-links.is-open {
+      .nav-links.open {
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -783,7 +783,7 @@
         gap: 2rem;
         z-index: 99;
       }
-      .nav-links.is-open a { font-size: 1.2rem; }
+      .nav-links.open a { font-size: 1.2rem; }
 
       .stats-grid { grid-template-columns: repeat(2, 1fr); }
       .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
@@ -1096,7 +1096,7 @@
 
     if (navToggle && navMenu) {
       navToggle.addEventListener('click', function () {
-        const isOpen = navMenu.classList.toggle('is-open');
+        const isOpen = navMenu.classList.toggle('open');
         navToggle.setAttribute('aria-expanded', isOpen.toString());
         document.body.style.overflow = isOpen ? 'hidden' : '';
       });
@@ -1104,7 +1104,7 @@
       // Close on link click
       navMenu.querySelectorAll('a').forEach(function (link) {
         link.addEventListener('click', function () {
-          navMenu.classList.remove('is-open');
+          navMenu.classList.remove('open');
           navToggle.setAttribute('aria-expanded', 'false');
           document.body.style.overflow = '';
         });
