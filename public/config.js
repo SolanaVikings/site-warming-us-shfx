@@ -11,13 +11,13 @@ const SCHEMA = {
   site_key: SITE_KEY,
   business: {
     name: 'Warming Us',
-    tagline: 'Keep you warm all year round',
-    email: 'kenellbt1@gmail.com',
-    phone: '',
-    address: 'Cardiff, Wales, UK',
-    founded: '2020',
+    tagline: 'South Wales plumbing & heating specialists',
+    email: 'Warningus@outlook.com',
+    phone: '07944280164',
+    address: 'South Wales',
+    founded: '2012',
     insured: true,
-    area: 'Cardiff and surrounding areas',
+    area: 'South Wales — free quotes within Cardiff',
     canonical: 'https://warming-us-shfx.onrender.com/'
   },
   sections: [
@@ -27,9 +27,9 @@ const SCHEMA = {
       name: 'Home – Hero',
       page: 'index',
       fields: {
-        headline: 'Keep You Warm All Year Round.',
-        tagline: 'Heating installation, boiler fitting, boiler repairs & gas plumbing — fully insured, serving Cardiff since 2020.',
-        cta_text: 'Book a Call',
+        headline: 'Plumbing & Heating You Can Rely On.',
+        tagline: 'Installation, servicing, maintenance & 24/7 emergency call outs across South Wales. 14 years\' experience. Free quotes within Cardiff.',
+        cta_text: 'Call Now',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80'
       }
     },
@@ -38,8 +38,8 @@ const SCHEMA = {
       name: 'Home – About Teaser',
       page: 'index',
       fields: {
-        title: 'Built on Trust. Driven by Warmth.',
-        description: 'Founded in 2020 and proudly based in Cardiff, Warming Us was built on a simple promise — to deliver expert heating and gas services with honesty, reliability and care. We\'re fully insured and committed to keeping every home and business warm throughout every season.'
+        title: 'South Wales Plumbing & Heating Experts',
+        description: 'With 14 years\' experience serving South Wales, Warming Us delivers expert plumbing and heating services you can trust. From bathroom suites (from just £499) and boiler installation to power flush services and 24/7 emergency call outs — we do it all. Registered at Companies House (No. 15664544) and proud to offer free quotes within Cardiff.'
       }
     },
 
@@ -50,17 +50,17 @@ const SCHEMA = {
       page: 'about',
       fields: {
         headline: 'Who We Are',
-        story: 'Warming Us was founded in 2020 by a team of passionate heating engineers who saw a gap in the Cardiff market for honest, high-quality heating services. Starting with a single van and a commitment to excellence, we have grown into one of Cardiff\'s most trusted names in heating and gas plumbing.',
-        mission: 'Our mission is simple: to keep every home and business warm, safe and comfortable — year-round. We do this by combining technical expertise with transparent pricing, reliable scheduling and a genuine care for our customers.',
+        story: 'Warming Us was founded in 2012 and has been proudly serving South Wales for 14 years. What started as a passion for getting the job done right has grown into one of the region\'s most trusted plumbing and heating companies. We specialise in installation, service & certificates, maintenance, power flush services, boiler installation, and bathroom suites from as little as £499. Registered at Companies House (No. 15664544), we offer 24/7 emergency call outs across South Wales with free quotes within Cardiff.',
+        mission: 'Our mission is simple: to keep every home and business in South Wales warm, safe and comfortable — year-round. We do this by combining 14 years of technical expertise with transparent pricing, reliable scheduling and a genuine care for our customers. From boiler installations to power flush services, we\'re here 24/7.',
         values_title: 'Our Values',
         value1_name: 'Reliability',
-        value1_desc: 'We show up when we say we will, complete jobs to the highest standard, and stand behind every piece of work we do.',
+        value1_desc: 'We show up when we say we will, complete jobs to the highest standard, and stand behind every piece of work we do. 14 years of trusted service across South Wales.',
         value2_name: 'Transparency',
-        value2_desc: 'No hidden charges, no surprise fees. You\'ll know exactly what you\'re getting before any work begins.',
+        value2_desc: 'No hidden charges, no surprise fees. You\'ll know exactly what you\'re getting before any work begins. Free quotes within Cardiff.',
         value3_name: 'Expertise',
-        value3_desc: 'Our engineers are fully trained, Gas Safe registered and continuously updated on the latest heating technologies.',
+        value3_desc: 'Our engineers bring 14 years of hands-on experience. From boiler installation and bathroom suites to power flush services — we handle it all professionally.',
         team_title: 'Our Team',
-        team_description: 'Our small but highly skilled team brings decades of combined experience in domestic and commercial heating. Every engineer is fully insured, Gas Safe registered, and dedicated to delivering work that lasts.',
+        team_description: 'Our skilled team brings 14 years of combined experience in plumbing and heating across South Wales. We\'re Companies House registered (No. 15664544), available 24/7 for emergencies, and dedicated to delivering work that lasts.',
         image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80'
       }
     },
@@ -72,21 +72,21 @@ const SCHEMA = {
       page: 'services',
       fields: {
         title: 'Our Services',
-        intro: 'From new installations to emergency repairs — we provide a complete range of heating and gas plumbing services for homes and businesses across Cardiff.',
-        service1_name: 'Heating Installation',
-        service1_desc: 'Full design and installation of central heating systems tailored to your property. We assess your space, recommend the most efficient solution, and carry out a clean, professional installation with minimal disruption.',
-        service1_price: 'From £1,200',
-        service2_name: 'Boiler Fitting',
-        service2_desc: 'New boiler supply and installation from leading brands including Worcester Bosch, Viessmann and Baxi. We handle everything from removal of your old unit to commissioning the new system.',
-        service2_price: 'From £800',
-        service3_name: 'Boiler Repairs',
-        service3_desc: 'Fast diagnosis and repair of boiler faults. Our engineers carry a comprehensive range of spare parts, meaning most boilers are fixed on the first visit. No fix, no call-out fee.',
-        service3_price: 'From £85',
-        service4_name: 'Gas Plumbing',
-        service4_desc: 'Safe, compliant gas pipework, connections and pressure testing. Whether you\'re extending your gas supply, fitting a new cooker or carrying out a full gas system overhaul — we do it right.',
-        service4_price: 'From £120',
-        cta_text: 'Book a Call',
-        cta_description: 'Not sure which service you need? Get in touch and we\'ll talk you through the options with no obligation.'
+        intro: 'From plumbing & heating installation to 24/7 emergency call outs — we provide a complete range of plumbing and heating services across South Wales. Free quotes within Cardiff.',
+        service1_name: 'Plumbing & Heating Installation',
+        service1_desc: 'Full plumbing and heating installation including bathroom suites from as little as £499 and boiler installation. We assess your property, recommend the best solution, and carry out a clean, professional installation with minimal disruption across South Wales.',
+        service1_price: 'Bathroom Suites From £499',
+        service2_name: 'Service & Certificates',
+        service2_desc: 'Gas safety certificates, landlord certificates, and boiler servicing to keep your systems compliant and running safely. All work carried out to the highest standards with proper certification for your records.',
+        service2_price: 'Free Quote',
+        service3_name: 'Maintenance & Power Flush',
+        service3_desc: 'Ongoing plumbing and heating maintenance to keep everything running smoothly. Our power flush service cleans and restores your heating system for improved efficiency and longer life. Serving all of South Wales.',
+        service3_price: 'Free Quote',
+        service4_name: '24/7 Emergency Call Out',
+        service4_desc: 'Round-the-clock emergency plumbing and heating call outs across South Wales. When you have an urgent issue — burst pipe, boiler breakdown, or heating failure — call us any time, day or night. 14 years of trusted emergency response.',
+        service4_price: 'Call 07944 280164',
+        cta_text: 'Call Now',
+        cta_description: 'Not sure which service you need? Give us a call on 07944 280164 or get in touch for a free quote within Cardiff.'
       }
     },
 
@@ -97,12 +97,12 @@ const SCHEMA = {
       page: 'contact',
       fields: {
         headline: 'Get In Touch',
-        description: 'Ready to book a service, get a quote, or just have a question? We\'re here to help. Reach out and one of our team will get back to you promptly.',
-        phone: '',
-        email: 'kenellbt1@gmail.com',
-        address: 'Cardiff, Wales, UK',
-        hours_title: 'Opening Hours',
-        hours: 'Monday – Friday: 8:00am – 6:00pm\nSaturday: 9:00am – 4:00pm\nSunday: Emergency call-outs only',
+        description: 'Ready to book a service, get a quote, or just have a question? We\'re here to help — 24/7 for emergencies. Serving all of South Wales with free quotes within Cardiff.',
+        phone: '07944280164',
+        email: 'Warningus@outlook.com',
+        address: 'South Wales',
+        hours_title: 'Availability',
+        hours: 'Available 24/7 — Emergency call outs any time',
         cta_text: 'Send a Message'
       }
     }
