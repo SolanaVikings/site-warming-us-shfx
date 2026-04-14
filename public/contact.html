@@ -581,10 +581,20 @@
     }
     .footer-inner {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      padding-bottom: 60px;
+      grid-template-columns: auto 1fr auto;
+      gap: 2.5rem;
+      padding: 2rem 0 1rem;
+      align-items: center;
     }
+    .footer-email-col { text-align: center; }
+    .footer-email-col .footer-email {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: color 0.25s ease;
+    }
+    .footer-email-col .footer-email:hover { color: var(--accent); }
     .footer-brand { display: flex; flex-direction: column; gap: 1rem; }
     .footer-logo { font-size: 1.1rem; }
     .footer-tagline {
@@ -887,6 +897,9 @@
       <div class="footer-col footer-brand">
         <a href="./index.html" class="nav-logo footer-logo" aria-label="Warming Us – Home">Warming Us</a>
       </div>
+      <div class="footer-col footer-email-col">
+        <a href="mailto:Warningus@outlook.com" class="footer-email">Warningus@outlook.com</a>
+      </div>
       <div class="footer-col footer-nav-col">
         <nav aria-label="Footer navigation">
           <ul class="footer-nav" role="list">
@@ -897,9 +910,6 @@
           </ul>
         </nav>
       </div>
-    </div>
-    <div class="footer-email-row container">
-      <a href="mailto:Warningus@outlook.com" class="footer-email">Warningus@outlook.com</a>
     </div>
     <div class="footer-bottom container">
       <p class="footer-small">&copy; <time datetime="2026">2026</time> Warming Us. All rights reserved. South Wales.</p>
