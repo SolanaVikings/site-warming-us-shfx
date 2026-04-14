@@ -61,7 +61,7 @@ const SCHEMA = {
         value3_desc: 'Our engineers bring 14 years of hands-on experience. From boiler installation and bathroom suites to power flush services — we handle it all professionally.',
         team_title: 'Our Team',
         team_description: 'Our skilled team brings 14 years of combined experience in plumbing and heating across South Wales. We\'re Companies House registered (No. 15664544), available 24/7 for emergencies, and dedicated to delivering work that lasts.',
-        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80'
+        image: './images/team-hero.jpg'
       }
     },
 
