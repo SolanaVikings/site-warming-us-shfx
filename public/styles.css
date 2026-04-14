@@ -183,7 +183,7 @@ h3 { font-size: var(--h3); font-weight: 600; }
 
 .footer-logo .nav-logo-img,
 .footer-brand .nav-logo-img {
-  height: 44px;
+  height: 32px;
   filter: brightness(1.05);
 }
 
@@ -774,22 +774,22 @@ h3 { font-size: var(--h3); font-weight: 600; }
 .footer-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  padding-top: 72px;
-  padding-bottom: 48px;
+  gap: 40px;
+  padding-top: 36px;
+  padding-bottom: 24px;
 }
 
-.footer-logo { display: block; margin-bottom: 16px; }
+.footer-logo { display: block; margin-bottom: 8px; }
 
 .footer-tagline {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
-  margin-bottom: 20px;
-  line-height: 1.6;
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
 
 .footer-email {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
   text-decoration: none;
   transition: color var(--transition);
@@ -801,12 +801,12 @@ h3 { font-size: var(--h3); font-weight: 600; }
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 24px;
+  gap: 12px;
 }
 
 .footer-nav {
   display: flex;
-  gap: 28px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
@@ -834,7 +834,7 @@ h3 { font-size: var(--h3); font-weight: 600; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 40px;
+  padding: 14px 40px;
   border-top: 1px solid var(--border);
   gap: 16px;
   flex-wrap: wrap;
