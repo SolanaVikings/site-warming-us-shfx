@@ -1008,10 +1008,11 @@ h3 { font-size: var(--h3); font-weight: 600; }
   .badge-number { font-size: 1.1rem; }
 
   /* Footer */
-  .footer-inner { grid-template-columns: 1fr; gap: 40px; }
-  .footer-nav-col { align-items: flex-start; }
-  .footer-nav { justify-content: flex-start; }
-  .footer-bottom { flex-direction: column; align-items: flex-start; padding-inline: 24px; }
+  .footer-inner { grid-template-columns: 1fr; gap: 24px; text-align: center; }
+  .footer-brand { display: flex; justify-content: center; }
+  .footer-nav-col { align-items: center; }
+  .footer-nav { justify-content: center; flex-wrap: wrap; }
+  .footer-bottom { flex-direction: column; align-items: center; text-align: center; gap: 6px; padding-inline: 24px; }
 
   /* Subpage */
   .subpage-header { padding: 140px 0 60px; }
