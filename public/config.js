@@ -27,9 +27,9 @@ const SCHEMA = {
       name: 'Home – Hero',
       page: 'index',
       fields: {
-        headline: 'Plumbing & Heating You Can Rely On.',
-        tagline: 'Installation, servicing, maintenance & 24/7 emergency call outs across South Wales. 14 years\' experience. Free quotes within Cardiff.',
-        cta_text: 'Call Now',
+        headline: 'Heat That Works. Plumbing That Lasts.',
+        tagline: 'Boilers, bathrooms, heating systems and 24/7 emergency call outs — 14 years keeping South Wales warm. Free quotes within Cardiff.',
+        cta_text: 'Call 07944 280164',
         image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80'
       }
     },
