@@ -451,22 +451,35 @@
       margin-bottom: 1.25rem;
     }
 
-    .service-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
+    /* 2-col detailed card grid (homepage style, richer per card) */
+    .services-grid--detail {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 900px) {
+      .services-grid--detail { grid-template-columns: 1fr; }
     }
 
-    .service-tag {
+    .service-sub-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    .sub-tag {
       font-family: var(--font-body);
-      font-size: 0.7rem;
+      font-size: 0.68rem;
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       color: var(--text-muted);
       border: 1px solid var(--border);
-      padding: 4px 12px;
-      border-radius: var(--radius);
+      padding: 3px 10px;
+      border-radius: 2px;
+    }
+    .service-card--emergency .sub-tag {
+      border-color: rgba(127, 184, 0, 0.35);
+      color: rgba(245, 240, 235, 0.7);
     }
 
     .service-price-block {
@@ -573,11 +586,27 @@
 
     .why-card {
       background: var(--bg-alt);
-      padding: 2.5rem 2rem;
-      transition: background 0.2s;
+      padding: 48px 36px;
+      transition: background 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .why-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
     }
 
     .why-card:hover { background: #161616; }
+    .why-card:hover::before { transform: scaleX(1); }
 
     .why-icon {
       width: 44px;
@@ -587,7 +616,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 24px;
       color: var(--accent);
     }
     .why-grid--three { grid-template-columns: repeat(3, 1fr); }
@@ -953,92 +982,74 @@
           </div>
         </div>
 
-        <div class="services-list">
+        <div class="services-grid services-grid--detail">
 
           <!-- SERVICE 1 -->
-          <article class="service-article" aria-label="Plumbing and Heating Installation service">
-            <div class="service-number">01</div>
-            <div class="service-content">
-              <h3 data-content="services_page.service1_name">Plumbing &amp; Heating Installation</h3>
-              <p data-content="services_page.service1_desc">
-                Full plumbing and heating installation including bathroom suites from as little as £499 and boiler installation. We assess your property, recommend the best solution, and carry out a clean, professional installation with minimal disruption across South Wales.
-              </p>
-              <div class="service-tags">
-                <span class="service-tag">Bathroom Suites</span>
-                <span class="service-tag">Boiler Installation</span>
-                <span class="service-tag">Vaillant · Worcester · Baxi</span>
-                <span class="service-tag">Radiators &amp; Heating</span>
-                <span class="service-tag">Fixed Quote</span>
-              </div>
+          <article class="service-card" aria-label="Plumbing and Heating Installation service">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
             </div>
-            <div class="service-price-block">
-              <p class="service-price" data-content="services_page.service1_price">Bathroom Suites From £499</p>
-              <p class="service-price-sub">Free quote within Cardiff</p>
+            <span class="service-tag" data-content="services_page.service1_price">From £499</span>
+            <h3 class="service-card-title" data-content="services_page.service1_name">Plumbing &amp; Heating Installation</h3>
+            <p class="service-card-desc" data-content="services_page.service1_desc">Full bathroom suites, boiler installations and complete plumbing &amp; heating systems — assessed, quoted and fitted by the same team across South Wales.</p>
+            <div class="service-sub-tags">
+              <span class="sub-tag">Bathroom Suites</span>
+              <span class="sub-tag">Boiler Installation</span>
+              <span class="sub-tag">Vaillant · Worcester · Baxi</span>
+              <span class="sub-tag">Fixed Quote</span>
             </div>
+            <a href="tel:07944280164" class="service-link" aria-label="Call for an installation quote">Get a quote →</a>
           </article>
 
           <!-- SERVICE 2 -->
-          <article class="service-article" aria-label="Service and Certificates">
-            <div class="service-number">02</div>
-            <div class="service-content">
-              <h3 data-content="services_page.service2_name">Service &amp; Certificates</h3>
-              <p data-content="services_page.service2_desc">
-                Gas safety certificates, landlord certificates, and boiler servicing to keep your systems compliant and running safely. All work carried out to the highest standards with proper certification for your records.
-              </p>
-              <div class="service-tags">
-                <span class="service-tag">Gas Safe Registered</span>
-                <span class="service-tag">Landlord CP12</span>
-                <span class="service-tag">Annual Boiler Service</span>
-                <span class="service-tag">Same-Day Cert</span>
-              </div>
+          <article class="service-card" aria-label="Service and Certificates">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
             </div>
-            <div class="service-price-block">
-              <p class="service-price" data-content="services_page.service2_price">Free Quote</p>
-              <p class="service-price-sub">Call to discuss</p>
+            <span class="service-tag" data-content="services_page.service2_price">Landlord CP12 Ready</span>
+            <h3 class="service-card-title" data-content="services_page.service2_name">Service &amp; Certificates</h3>
+            <p class="service-card-desc" data-content="services_page.service2_desc">Annual boiler services, gas safety certificates and landlord CP12s — done properly, logged and in your inbox the same day.</p>
+            <div class="service-sub-tags">
+              <span class="sub-tag">Gas Safe Registered</span>
+              <span class="sub-tag">Landlord CP12</span>
+              <span class="sub-tag">Annual Boiler Service</span>
+              <span class="sub-tag">Same-Day Cert</span>
             </div>
+            <a href="tel:07944280164" class="service-link" aria-label="Book a service">Book a service →</a>
           </article>
 
           <!-- SERVICE 3 -->
-          <article class="service-article" aria-label="Maintenance and Power Flush service">
-            <div class="service-number">03</div>
-            <div class="service-content">
-              <h3 data-content="services_page.service3_name">Maintenance &amp; Power Flush</h3>
-              <p data-content="services_page.service3_desc">
-                Ongoing plumbing and heating maintenance to keep everything running smoothly. Our power flush service cleans and restores your heating system for improved efficiency and longer life. Serving all of South Wales.
-              </p>
-              <div class="service-tags">
-                <span class="service-tag">Power Flush</span>
-                <span class="service-tag">Sludge Removal</span>
-                <span class="service-tag">Radiator Balance</span>
-                <span class="service-tag">Typical 1-Day Job</span>
-              </div>
+          <article class="service-card" aria-label="Maintenance and Power Flush service">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
             </div>
-            <div class="service-price-block">
-              <p class="service-price" data-content="services_page.service3_price">Free Quote</p>
-              <p class="service-price-sub">Call to discuss</p>
+            <span class="service-tag" data-content="services_page.service3_price">Prevent Breakdowns</span>
+            <h3 class="service-card-title" data-content="services_page.service3_name">Maintenance &amp; Power Flush</h3>
+            <p class="service-card-desc" data-content="services_page.service3_desc">Power flushing, sludge removal and planned maintenance — so cold radiators and noisy boilers stop being your problem.</p>
+            <div class="service-sub-tags">
+              <span class="sub-tag">Power Flush</span>
+              <span class="sub-tag">Sludge Removal</span>
+              <span class="sub-tag">Radiator Balance</span>
+              <span class="sub-tag">Typical 1-Day Job</span>
             </div>
+            <a href="tel:07944280164" class="service-link" aria-label="Book maintenance">Keep it running →</a>
           </article>
 
           <!-- SERVICE 4 -->
-          <article class="service-article" aria-label="24/7 Emergency Call Out service">
-            <div class="service-number">04</div>
-            <div class="service-content">
-              <h3 data-content="services_page.service4_name">24/7 Emergency Call Out</h3>
-              <p data-content="services_page.service4_desc">
-                Round-the-clock emergency plumbing and heating call outs across South Wales. When you have an urgent issue — burst pipe, boiler breakdown, or heating failure — call us any time, day or night. 14 years of trusted emergency response.
-              </p>
-              <div class="service-tags">
-                <span class="service-tag">24/7 · Any Day</span>
-                <span class="service-tag">Burst Pipes</span>
-                <span class="service-tag">Boiler Breakdown</span>
-                <span class="service-tag">No Heat / No Hot Water</span>
-                <span class="service-tag">~60-min Cardiff Response</span>
-              </div>
+          <article class="service-card service-card--emergency" aria-label="24/7 Emergency Call Out service">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <div class="service-price-block">
-              <p class="service-price" data-content="services_page.service4_price">Call 07944 280164</p>
-              <p class="service-price-sub">Any time, day or night</p>
+            <span class="service-tag" data-content="services_page.service4_price">24/7 · Any Day</span>
+            <h3 class="service-card-title" data-content="services_page.service4_name">No Heat? No Hot Water?<br>We Come Now.</h3>
+            <p class="service-card-desc" data-content="services_page.service4_desc">Round-the-clock emergency plumbing and heating call outs across South Wales. One call, one engineer, on the way.</p>
+            <div class="service-sub-tags">
+              <span class="sub-tag">Burst Pipes</span>
+              <span class="sub-tag">Boiler Breakdown</span>
+              <span class="sub-tag">No Heat / No Hot Water</span>
+              <span class="sub-tag">~60-min Cardiff Response</span>
             </div>
+            <a href="tel:07944280164" class="service-link" aria-label="Call the emergency line now">Call 07944 280164 →</a>
           </article>
 
         </div>
