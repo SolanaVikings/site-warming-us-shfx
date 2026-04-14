@@ -85,6 +85,47 @@
   }
   </script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How quickly can you come out?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In a genuine emergency we're usually on-site within the hour across Cardiff, and same-day everywhere else in South Wales. For booked jobs, same-week is standard — often sooner."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you give fixed quotes before starting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every job gets a written, fixed quote upfront — no call-out surprises, no sliding hourly rates. If the scope changes mid-job, we stop and agree it with you before carrying on."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if something goes wrong after you've left?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Workmanship is covered for 12 months on every installation. If it's our install and something fails, we come back and fix it — no charge. Manufacturer warranties run alongside that on new parts and boilers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you cover my area?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We cover all of South Wales — Cardiff, Penarth, Barry, Caerphilly, Bridgend, Newport and the Valleys. Free quotes are standard within Cardiff."
+        }
+      }
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -547,7 +588,98 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 1.5rem;
-      font-size: 1.25rem;
+      color: var(--accent);
+    }
+    .why-grid--three { grid-template-columns: repeat(3, 1fr); }
+
+    /* ─── FAQ ─── */
+    .faq-section {
+      padding: 100px 0;
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border);
+    }
+    .faq-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .faq-header .eyebrow {
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .faq-header h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      color: var(--text);
+    }
+    .faq-list {
+      max-width: 760px;
+      margin: 0 auto;
+      border-top: 1px solid var(--border);
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-item summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.5rem 0.25rem;
+      cursor: pointer;
+      list-style: none;
+      transition: color 0.2s ease;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-q {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.005em;
+    }
+    .faq-item summary:hover .faq-q { color: var(--accent); }
+    .faq-toggle {
+      position: relative;
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+    .faq-toggle::before,
+    .faq-toggle::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 14px;
+      height: 2px;
+      background: var(--accent);
+      transform: translate(-50%, -50%);
+      transition: transform 0.25s ease;
+    }
+    .faq-toggle::after { transform: translate(-50%, -50%) rotate(90deg); }
+    .faq-item[open] .faq-toggle::after { transform: translate(-50%, -50%) rotate(0deg); }
+    .faq-a {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+      padding: 0 0.25rem 1.5rem;
+      max-width: 680px;
+    }
+
+    @media (max-width: 768px) {
+      .faq-section { padding: 70px 0; }
+      .faq-item summary { padding: 1.25rem 0.25rem; }
+      .faq-q { font-size: 0.95rem; }
     }
 
     .why-card h3 {
@@ -834,9 +966,9 @@
               <div class="service-tags">
                 <span class="service-tag">Bathroom Suites</span>
                 <span class="service-tag">Boiler Installation</span>
-                <span class="service-tag">Central Heating</span>
-                <span class="service-tag">Radiators</span>
-                <span class="service-tag">South Wales</span>
+                <span class="service-tag">Vaillant · Worcester · Baxi</span>
+                <span class="service-tag">Radiators &amp; Heating</span>
+                <span class="service-tag">Fixed Quote</span>
               </div>
             </div>
             <div class="service-price-block">
@@ -854,11 +986,10 @@
                 Gas safety certificates, landlord certificates, and boiler servicing to keep your systems compliant and running safely. All work carried out to the highest standards with proper certification for your records.
               </p>
               <div class="service-tags">
-                <span class="service-tag">Gas Safety</span>
-                <span class="service-tag">Landlord Certs</span>
-                <span class="service-tag">Boiler Servicing</span>
-                <span class="service-tag">Compliance</span>
-                <span class="service-tag">Certification</span>
+                <span class="service-tag">Gas Safe Registered</span>
+                <span class="service-tag">Landlord CP12</span>
+                <span class="service-tag">Annual Boiler Service</span>
+                <span class="service-tag">Same-Day Cert</span>
               </div>
             </div>
             <div class="service-price-block">
@@ -877,10 +1008,9 @@
               </p>
               <div class="service-tags">
                 <span class="service-tag">Power Flush</span>
-                <span class="service-tag">System Cleaning</span>
-                <span class="service-tag">Maintenance</span>
-                <span class="service-tag">Efficiency</span>
-                <span class="service-tag">South Wales</span>
+                <span class="service-tag">Sludge Removal</span>
+                <span class="service-tag">Radiator Balance</span>
+                <span class="service-tag">Typical 1-Day Job</span>
               </div>
             </div>
             <div class="service-price-block">
@@ -898,11 +1028,11 @@
                 Round-the-clock emergency plumbing and heating call outs across South Wales. When you have an urgent issue — burst pipe, boiler breakdown, or heating failure — call us any time, day or night. 14 years of trusted emergency response.
               </p>
               <div class="service-tags">
-                <span class="service-tag">24/7 Available</span>
-                <span class="service-tag">Emergency</span>
+                <span class="service-tag">24/7 · Any Day</span>
                 <span class="service-tag">Burst Pipes</span>
                 <span class="service-tag">Boiler Breakdown</span>
-                <span class="service-tag">South Wales</span>
+                <span class="service-tag">No Heat / No Hot Water</span>
+                <span class="service-tag">~60-min Cardiff Response</span>
               </div>
             </div>
             <div class="service-price-block">
@@ -943,40 +1073,71 @@
     <section class="why-section" aria-label="Why choose Warming Us">
       <div class="container">
         <div class="why-header">
-          <p class="eyebrow">Why choose us</p>
-          <h2>Built on Trust &amp; Expertise</h2>
+          <p class="eyebrow">The difference</p>
+          <h2>Three Things We<br>Won't Compromise On</h2>
         </div>
-        <div class="why-grid">
+        <div class="why-grid why-grid--three">
           <div class="why-card">
-            <div class="why-icon" aria-hidden="true">🔒</div>
-            <h3>Fully Insured</h3>
-            <p>Every job is backed by full public liability insurance, so you can book with complete confidence that you and your property are protected.</p>
+            <div class="why-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20"/><path d="M7 15h3"/></svg>
+            </div>
+            <h3>Fixed, Upfront Pricing</h3>
+            <p>Every job gets a written, fixed quote before we start. No call-out surprises, no sliding hourly rates — what you see is what you pay.</p>
           </div>
           <div class="why-card">
-            <div class="why-icon" aria-hidden="true">⚡</div>
-            <h3>24/7 Emergency</h3>
-            <p>We understand that plumbing and heating problems can't wait. We offer round-the-clock emergency call outs across South Wales.</p>
+            <div class="why-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3>24/7 Emergency Response</h3>
+            <p>Burst pipe, dead boiler, no hot water — call any hour. We're usually on-site within the hour in and around Cardiff.</p>
           </div>
           <div class="why-card">
-            <div class="why-icon" aria-hidden="true">✓</div>
-            <h3>Certified Engineers</h3>
-            <p>All gas and heating work is carried out by qualified, registered engineers. Every job is completed to the highest safety and regulatory standards.</p>
+            <div class="why-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>The Engineer Who Quotes, Works</h3>
+            <p>No subcontractors. No hand-offs to a junior. The person who walks your job is the person who fits it — so the standard never slips.</p>
           </div>
-          <div class="why-card">
-            <div class="why-icon" aria-hidden="true">💬</div>
-            <h3>Honest Pricing</h3>
-            <p>No hidden costs or surprise charges. We provide clear, upfront quotes before any work begins so you always know exactly what you're paying for.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon" aria-hidden="true">🏠</div>
-            <h3>South Wales Based</h3>
-            <p>Based in South Wales, we serve the local community with short call-out times and a genuine understanding of local housing and heating needs. Free quotes within Cardiff.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon" aria-hidden="true">🌡️</div>
-            <h3>All Year Round</h3>
-            <p>Heating emergencies don't only happen in winter. We're available throughout the year to keep your home warm, safe, and comfortable every season.</p>
-          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="faq-header">
+          <p class="eyebrow">Before you ask</p>
+          <h2>Quick Answers.<br>No Runaround.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">How quickly can you come out?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <p class="faq-a">In a genuine emergency we're usually on-site within the hour across Cardiff, and same-day everywhere else in South Wales. For booked jobs, same-week is standard — often sooner.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">Do you give fixed quotes before starting?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <p class="faq-a">Yes. Every job gets a written, fixed quote upfront — no call-out surprises, no sliding hourly rates. If the scope changes mid-job (rare), we stop and agree it with you before carrying on.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">What if something goes wrong after you've left?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <p class="faq-a">Workmanship is covered for 12 months on every installation. If it's our install and something fails, we come back and fix it — no charge. Manufacturer warranties run alongside that on new parts and boilers.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">Do you cover my area?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <p class="faq-a">We cover all of South Wales — Cardiff, Penarth, Barry, Caerphilly, Bridgend, Newport and the Valleys. Free quotes are standard within Cardiff. Give us a call if you're not sure.</p>
+          </details>
         </div>
       </div>
     </section>
