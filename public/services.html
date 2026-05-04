@@ -469,6 +469,7 @@
       border-radius: var(--radius);
       overflow: hidden;
       background: #050505;
+      aspect-ratio: 3 / 2;
     }
 
     .service-card-media picture {
@@ -477,7 +478,7 @@
 
     .service-card-media img {
       width: 100%;
-      height: 230px;
+      height: 100%;
       object-fit: cover;
       display: block;
       filter: brightness(0.88) saturate(0.95);
@@ -945,6 +946,7 @@
       .nav-links.open + .nav-cta { display: none; }
 
       .subpage-header h1 { font-size: 2rem; }
+      .service-card-media { aspect-ratio: 4 / 3; }
     }
   </style>
 </head>

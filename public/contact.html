@@ -280,6 +280,10 @@
       filter: brightness(0.88) saturate(0.95);
     }
 
+    .contact-visual-img--emergency {
+      object-position: center 46%;
+    }
+
     /* ── ADDRESS BLOCK ── */
     address { font-style: normal; }
     .contact-cards {
@@ -701,6 +705,7 @@
       .cta-strip-actions .btn-cta,
       .cta-strip-actions .btn-outline { width: 100%; text-align: center; }
       .contact-section { padding: 80px 0; }
+      .contact-visual-img--emergency { object-position: 30% 46%; }
     }
     @media (max-width: 480px) {
       .subpage-header h1 { font-size: 1.6rem; }
@@ -775,8 +780,8 @@
 
             <div class="contact-visual">
               <picture>
-                <source media="(min-width: 768px)" srcset="./images/05_precision_work-desktop.webp">
-                <img src="./images/05_precision_work-mobile.webp" alt="Close-up precision plumbing work by a Warming Us engineer" width="900" height="1200" loading="lazy">
+                <source media="(min-width: 768px)" srcset="./images/warming-us-emergency-contact.webp">
+                <img src="./images/warming-us-emergency-contact.webp" alt="Warming Us emergency engineer arriving at a customer's door at night" width="1536" height="1024" loading="lazy" class="contact-visual-img--emergency">
               </picture>
             </div>
 
