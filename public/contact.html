@@ -261,6 +261,25 @@
       margin-right: auto;
     }
 
+    .contact-visual {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--bg-alt);
+    }
+
+    .contact-visual picture {
+      display: block;
+    }
+
+    .contact-visual img {
+      width: 100%;
+      height: 390px;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.88) saturate(0.95);
+    }
+
     /* ── ADDRESS BLOCK ── */
     address { font-style: normal; }
     .contact-cards {
@@ -752,6 +771,13 @@
             <div class="contact-info-intro">
               <h2>Reach Out<br><span style="color: var(--accent);">Any Time</span></h2>
               <p data-content="contact_page.cta_text">Whether you need a 24/7 emergency call out, a new installation, or just want some advice — drop us a message or give us a call. We cover all of South Wales with free quotes within Cardiff.</p>
+            </div>
+
+            <div class="contact-visual">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./images/03_customer_doorstep-desktop.webp">
+                <img src="./images/03_customer_doorstep-mobile.webp" alt="Warming Us engineer speaking with a customer at the front door" width="900" height="1200" loading="lazy">
+              </picture>
             </div>
 
             <address>

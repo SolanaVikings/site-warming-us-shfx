@@ -65,14 +65,18 @@
     <!-- HERO -->
     <section class="hero" aria-label="Hero – Keep you warm all year round">
       <div class="hero-bg">
-        <img
-          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
-          alt="Engineer fitting a modern boiler in a Cardiff home"
-          width="1600"
-          height="900"
-          loading="lazy"
-          class="hero-img"
-        >
+        <picture>
+          <source media="(min-width: 768px)" srcset="./images/01_hero_plumber_working-desktop.webp">
+          <img
+            src="./images/01_hero_plumber_working-mobile-fixed-hands.webp"
+            alt="Warming Us engineer working on plumbing and heating pipework in a South Wales home"
+            width="900"
+            height="1200"
+            loading="eager"
+            fetchpriority="high"
+            class="hero-img"
+          >
+        </picture>
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content container">
@@ -217,14 +221,17 @@
           </div>
           <div class="about-teaser-visual">
             <div class="about-image-wrap">
-              <img
-                src="./images/team-about.jpg"
-                alt="The Warming Us team of four plumbers in South Wales"
-                width="800"
-                height="600"
-                loading="lazy"
-                class="about-img"
-              >
+              <picture>
+                <source media="(min-width: 768px)" srcset="./images/02_van_trust_exterior-desktop.webp">
+                <img
+                  src="./images/02_van_trust_exterior-mobile.webp"
+                  alt="Warming Us van parked outside a South Wales home before a heating call out"
+                  width="900"
+                  height="1200"
+                  loading="lazy"
+                  class="about-img"
+                >
+              </picture>
               <div class="about-image-badge" aria-label="14 years experience badge">
                 <span class="badge-number">14+</span>
                 <span class="badge-text">Years<br>Experience</span>

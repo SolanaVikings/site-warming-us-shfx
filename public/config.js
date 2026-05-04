@@ -30,7 +30,7 @@ const SCHEMA = {
         headline: 'Heat That Works. Plumbing That Lasts.',
         tagline: 'Boilers, bathrooms, heating systems and 24/7 emergency call outs — 14 years keeping South Wales warm. Free quotes within Cardiff.',
         cta_text: 'Call 07944 280164',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80'
+        image: './images/01_hero_plumber_working-desktop.webp'
       }
     },
     {
@@ -61,7 +61,7 @@ const SCHEMA = {
         value3_desc: 'Our engineers bring 14 years of hands-on experience. From boiler installation and bathroom suites to power flush services — we handle it all professionally.',
         team_title: 'Our Team',
         team_description: 'Our skilled team brings 14 years of combined experience in plumbing and heating across South Wales. We\'re Companies House registered (No. 15664544), available 24/7 for emergencies, and dedicated to delivering work that lasts.',
-        image: './images/team-hero.jpg'
+        image: './images/06_thermostat_outcome_black_engineer-desktop.webp'
       }
     },
 
@@ -103,7 +103,7 @@ const SCHEMA = {
         address: 'South Wales',
         hours_title: 'Availability',
         hours: 'Available 24/7 — Emergency call outs any time',
-        cta_text: 'Send a Message'
+        cta_text: 'Whether you need a 24/7 emergency call out, a new installation, or just want some advice — drop us a message or give us a call. We cover all of South Wales with free quotes within Cardiff.'
       }
     }
   ]

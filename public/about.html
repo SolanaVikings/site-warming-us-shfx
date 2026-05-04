@@ -285,6 +285,11 @@
       overflow: hidden;
     }
 
+    .story-img-wrap picture,
+    .team-img-wrap picture {
+      display: block;
+    }
+
     .story-img-wrap img {
       width: 100%;
       height: 560px;
@@ -919,13 +924,16 @@
 
           <div class="story-visual">
             <div class="story-img-wrap">
-              <img
-                src="./images/team-about.jpg"
-                alt="The Warming Us team of four plumbers in front of their work van in South Wales"
-                width="800"
-                height="560"
-                loading="lazy"
-              />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./images/02_van_trust_exterior-desktop.webp" />
+                <img
+                  src="./images/02_van_trust_exterior-mobile.webp"
+                  alt="Warming Us van outside a South Wales home before a plumbing and heating visit"
+                  width="900"
+                  height="1200"
+                  loading="lazy"
+                />
+              </picture>
             </div>
             <div class="story-badge" aria-label="14 plus years experience">
               <span class="badge-num">14+</span>
@@ -1069,14 +1077,17 @@
 
           <div class="team-img-col">
             <div class="team-img-wrap">
-              <img
-                data-content="about_page.image"
-                src="./images/team-hero.jpg"
-                alt="The Warming Us team of four plumbers on a South Wales job site with tools"
-                width="800"
-                height="520"
-                loading="lazy"
-              />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./images/06_thermostat_outcome_black_engineer-desktop.webp" />
+                <img
+                  data-content="about_page.image"
+                  src="./images/06_thermostat_outcome_black_engineer-desktop.webp"
+                  alt="Warming Us engineer checking a home thermostat after heating work"
+                  width="1920"
+                  height="1080"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-img-overlay">
                 <span class="team-caption">South Wales' Trusted Plumbing & Heating Team</span>
               </div>
