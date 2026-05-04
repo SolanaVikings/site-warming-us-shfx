@@ -717,7 +717,7 @@ h3 { font-size: var(--h3); font-weight: 600; }
 }
 
 .about-img--van {
-  object-position: 25% center;
+  object-position: center;
 }
 
 .about-image-badge {
