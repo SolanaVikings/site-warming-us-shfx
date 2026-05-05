@@ -1198,7 +1198,7 @@ async function loadAgentReadiness() {
 
     try {
         // Fetch the live site HTML
-        const siteUrl = window.location.origin + '/index.html';
+        const siteUrl = window.location.origin + '/';
         const response = await fetch(siteUrl);
         const html = await response.text();
 

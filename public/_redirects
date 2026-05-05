@@ -2,3 +2,14 @@
 /api/*        https://xhvimodqpzegibojxlfi.supabase.co/functions/v1/site-api?site_key=warming-us-shfx&action=:splat  200
 /mcp          https://xhvimodqpzegibojxlfi.supabase.co/functions/v1/site-mcp?site_key=warming-us-shfx  200
 /.well-known/mcp.json  /mcp-manifest.json  200
+
+# Canonicalise legacy .html URLs to clean slugs
+/about.html     /about     301
+/services.html  /services  301
+/contact.html   /contact   301
+/index.html     /          301
+
+# Serve .html files at clean slugs (no extension in URL)
+/about     /about.html     200
+/services  /services.html  200
+/contact   /contact.html   200

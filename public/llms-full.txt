@@ -6,10 +6,10 @@ Website: https://warming-us-shfx.onrender.com
 
 ## Pages
 
-- [About](https://warming-us-shfx.onrender.com/about.html)
+- [About](https://warming-us-shfx.onrender.com/about)
 - [Index](https://warming-us-shfx.onrender.com/)
-- [Contact](https://warming-us-shfx.onrender.com/contact.html)
-- [Services](https://warming-us-shfx.onrender.com/services.html)
+- [Contact](https://warming-us-shfx.onrender.com/contact)
+- [Services](https://warming-us-shfx.onrender.com/services)
 
 ---
 

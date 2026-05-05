@@ -836,6 +836,7 @@ h3 { font-size: var(--h3); font-weight: 600; }
 
 .footer-email-col {
   text-align: center;
+  font-style: normal;
 }
 .footer-email-col .footer-email {
   font-size: 0.85rem;
@@ -845,6 +846,11 @@ h3 { font-size: var(--h3); font-weight: 600; }
   transition: color var(--transition);
 }
 .footer-email-col .footer-email:hover { color: var(--accent); }
+.footer-email-col .footer-sep {
+  margin: 0 0.5em;
+  color: var(--text-muted);
+  opacity: 0.4;
+}
 
 .footer-logo { display: block; margin-bottom: 0; }
 

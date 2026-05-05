@@ -6,7 +6,23 @@
   <title>Plumbing & Heating Services South Wales | Warming Us</title>
   <meta name="description" content="Boiler installation, bathroom suites, gas safety certificates, power flushing and 24/7 emergency plumbing across South Wales. Free Cardiff quotes.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <link rel="canonical" href="https://warming-us-shfx.onrender.com/services.html">
+  <link rel="canonical" href="https://warming-us-shfx.onrender.com/services">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Warming Us">
+  <meta property="og:title" content="Plumbing & Heating Services South Wales | Warming Us">
+  <meta property="og:description" content="Boiler installation, bathroom suites, gas safety certificates, power flushing and 24/7 emergency plumbing across South Wales. Free Cardiff quotes.">
+  <meta property="og:url" content="https://warming-us-shfx.onrender.com/services">
+  <meta property="og:image" content="https://warming-us-shfx.onrender.com/images/emergency-callout-1536x1024.webp">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="Warming Us engineer carrying a tool bag from a branded van at night on a 24/7 emergency call out">
+  <meta property="og:locale" content="en_GB">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Plumbing & Heating Services South Wales | Warming Us">
+  <meta name="twitter:description" content="Boiler installation, bathroom suites, gas safety certificates, power flushing and 24/7 emergency plumbing across South Wales. Free Cardiff quotes.">
+  <meta name="twitter:image" content="https://warming-us-shfx.onrender.com/images/emergency-callout-1536x1024.webp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +35,7 @@
     "@context": "https://schema.org",
     "@type": "ItemList",
     "name": "Warming Us Services",
-    "url": "https://warming-us-shfx.onrender.com/services.html",
+    "url": "https://warming-us-shfx.onrender.com/services",
     "itemListElement": [
       {
         "@type": "ListItem",
@@ -469,27 +485,18 @@
       border-radius: var(--radius);
       overflow: hidden;
       background: #050505;
-      aspect-ratio: 3 / 2;
     }
 
     .service-card-media picture {
       display: block;
+      width: 100%;
     }
 
     .service-card-media img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
       display: block;
       filter: brightness(0.88) saturate(0.95);
-    }
-
-    .service-card-img--certificates {
-      object-position: center 44%;
-    }
-
-    .service-card-img--powerflush {
-      object-position: center top;
     }
 
     .service-sub-tags {
@@ -946,7 +953,6 @@
       .nav-links.open + .nav-cta { display: none; }
 
       .subpage-header h1 { font-size: 2rem; }
-      .service-card-media { aspect-ratio: 4 / 3; }
     }
   </style>
 </head>
@@ -955,17 +961,17 @@
   <!-- NAV -->
   <header class="site-nav" role="banner">
     <nav class="nav-inner container" aria-label="Main navigation">
-      <a href="./index.html" class="nav-logo" aria-label="Warming Us – Home"><img src="./images/warming-us-logo-light.png" alt="Warming Us" class="nav-logo-img" width="140" height="38"></a>
+      <a href="/" class="nav-logo" aria-label="Warming Us – Home"><img src="./images/warming-us-logo-light.png" alt="Warming Us" class="nav-logo-img" width="140" height="38"></a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="nav-menu" role="list">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./services.html" aria-current="page">Services</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services" aria-current="page">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
-      <a href="./contact.html" class="btn-cta nav-cta">Book a Call</a>
+      <a href="/contact" class="btn-cta nav-cta">Book a Call</a>
     </nav>
   </header>
 
@@ -1088,8 +1094,8 @@
           <article class="service-card service-card--emergency" aria-label="24/7 Emergency Call Out service">
             <div class="service-card-media">
               <picture>
-                <source media="(min-width: 768px)" srcset="./images/06_thermostat_outcome_black_engineer-desktop.webp">
-                <img src="./images/06_thermostat_outcome_black_engineer-desktop.webp" alt="Warming Us engineer checking a thermostat after restoring heating" width="1920" height="1080" loading="lazy">
+                <source media="(min-width: 768px)" srcset="./images/emergency-callout-1536x1024.webp">
+                <img src="./images/emergency-callout-1536x1024.webp" alt="Warming Us engineer carrying a tool bag from a branded van at night in the rain on a 24/7 emergency call out" width="1536" height="1024" loading="lazy">
               </picture>
             </div>
             <div class="service-icon" aria-hidden="true">
@@ -1229,18 +1235,20 @@
   <footer class="site-footer" role="contentinfo" aria-label="Site footer">
     <div class="footer-inner container">
       <div class="footer-col footer-brand">
-        <a href="./index.html" class="nav-logo footer-logo" aria-label="Warming Us – Home">Warming Us</a>
+        <a href="/" class="nav-logo footer-logo" aria-label="Warming Us – Home">Warming Us</a>
       </div>
-      <div class="footer-col footer-email-col">
+      <address class="footer-col footer-email-col">
+        <a href="tel:07944280164" class="footer-email">07944 280164</a>
+        <span aria-hidden="true" class="footer-sep">·</span>
         <a href="mailto:Warningus@outlook.com" class="footer-email">Warningus@outlook.com</a>
-      </div>
+      </address>
       <div class="footer-col footer-nav-col">
         <nav aria-label="Footer navigation">
           <ul class="footer-nav" role="list">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./services.html">Services</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </nav>
       </div>
