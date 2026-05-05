@@ -30,7 +30,7 @@
 
   <link rel="stylesheet" href="styles.css">
 
-  <script type="application/ld+json">
+    <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -42,13 +42,38 @@
         "position": 1,
         "item": {
           "@type": "Service",
+          "@id": "https://warming-us-shfx.onrender.com/services#installation",
           "name": "Plumbing & Heating Installation",
-          "description": "Bathroom suites from £499, boiler installs and heating upgrades across South Wales.",
+          "alternateName": ["Boiler Installation", "Bathroom Installation", "Heating Upgrade"],
+          "description": "Combi, system and regular boiler installation, bathroom suites from £499, full central heating upgrades, radiator work and smart thermostat fitting across South Wales.",
+          "serviceType": "Installation",
+          "category": "Plumbing and heating installation",
+          "areaServed": [
+            { "@type": "City", "name": "Cardiff" },
+            { "@type": "City", "name": "Penarth" },
+            { "@type": "City", "name": "Barry" },
+            { "@type": "City", "name": "Caerphilly" },
+            { "@type": "City", "name": "Bridgend" },
+            { "@type": "City", "name": "Newport" },
+            { "@type": "Place", "name": "South Wales Valleys" }
+          ],
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "GBP",
+            "price": "499",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "valueAddedTaxIncluded": true,
+              "description": "Bathroom suites from £499; boiler installations quoted per job."
+            },
+            "availability": "https://schema.org/InStock"
+          },
           "provider": {
             "@type": "LocalBusiness",
             "name": "Warming Us",
-            "address": { "@type": "PostalAddress", "addressRegion": "South Wales" },
-            "email": "Warningus@outlook.com"
+            "telephone": "+44-7944-280164",
+            "email": "Warningus@outlook.com",
+            "address": { "@type": "PostalAddress", "addressRegion": "South Wales", "addressCountry": "GB" }
           }
         }
       },
@@ -57,13 +82,33 @@
         "position": 2,
         "item": {
           "@type": "Service",
+          "@id": "https://warming-us-shfx.onrender.com/services#certificates",
           "name": "Service & Certificates",
-          "description": "Boiler servicing, gas safety checks and landlord CP12 certificates across South Wales.",
+          "alternateName": ["Gas Safety Certificate", "CP12 Certificate", "Boiler Service", "Landlord Gas Safety Check"],
+          "description": "Annual landlord gas safety certificates (CP12), boiler servicing, gas appliance safety checks and pre-tenancy inspections across South Wales — paperwork supplied digitally and on paper.",
+          "serviceType": "Inspection and Certification",
+          "category": "Gas safety, servicing and compliance",
+          "audience": [
+            { "@type": "Audience", "audienceType": "Homeowner" },
+            { "@type": "Audience", "audienceType": "Landlord" },
+            { "@type": "Audience", "audienceType": "Letting Agent" },
+            { "@type": "Audience", "audienceType": "Holiday Let Operator" }
+          ],
+          "areaServed": [
+            { "@type": "City", "name": "Cardiff" },
+            { "@type": "City", "name": "Penarth" },
+            { "@type": "City", "name": "Barry" },
+            { "@type": "City", "name": "Caerphilly" },
+            { "@type": "City", "name": "Bridgend" },
+            { "@type": "City", "name": "Newport" },
+            { "@type": "Place", "name": "South Wales Valleys" }
+          ],
           "provider": {
             "@type": "LocalBusiness",
             "name": "Warming Us",
-            "address": { "@type": "PostalAddress", "addressRegion": "South Wales" },
-            "email": "Warningus@outlook.com"
+            "telephone": "+44-7944-280164",
+            "email": "Warningus@outlook.com",
+            "address": { "@type": "PostalAddress", "addressRegion": "South Wales", "addressCountry": "GB" }
           }
         }
       },
@@ -72,13 +117,27 @@
         "position": 3,
         "item": {
           "@type": "Service",
+          "@id": "https://warming-us-shfx.onrender.com/services#maintenance",
           "name": "Maintenance & Power Flush",
-          "description": "Power flushing, sludge removal, radiator balancing and heating maintenance across South Wales.",
+          "alternateName": ["Power Flush", "Heating System Flush", "Sludge Removal", "Radiator Balancing"],
+          "description": "Full system power flushing, sludge removal, magnetic filter fitting, radiator balancing, valve and pump replacement and cold-spot diagnosis across South Wales heating systems.",
+          "serviceType": "Maintenance",
+          "category": "Heating system maintenance",
+          "areaServed": [
+            { "@type": "City", "name": "Cardiff" },
+            { "@type": "City", "name": "Penarth" },
+            { "@type": "City", "name": "Barry" },
+            { "@type": "City", "name": "Caerphilly" },
+            { "@type": "City", "name": "Bridgend" },
+            { "@type": "City", "name": "Newport" },
+            { "@type": "Place", "name": "South Wales Valleys" }
+          ],
           "provider": {
             "@type": "LocalBusiness",
             "name": "Warming Us",
-            "address": { "@type": "PostalAddress", "addressRegion": "South Wales" },
-            "email": "Warningus@outlook.com"
+            "telephone": "+44-7944-280164",
+            "email": "Warningus@outlook.com",
+            "address": { "@type": "PostalAddress", "addressRegion": "South Wales", "addressCountry": "GB" }
           }
         }
       },
@@ -87,13 +146,38 @@
         "position": 4,
         "item": {
           "@type": "Service",
+          "@id": "https://warming-us-shfx.onrender.com/services#emergency",
           "name": "24/7 Emergency Call Out",
-          "description": "24/7 emergency plumbing and heating call outs for burst pipes, boiler breakdowns and no hot water across South Wales.",
+          "alternateName": ["Emergency Plumber", "Emergency Boiler Repair", "Burst Pipe Call Out", "Out of Hours Plumber"],
+          "description": "24/7 emergency plumbing and heating support for burst pipes, dead boilers, no heat, no hot water, frozen condensate and pressure loss across Cardiff and South Wales.",
+          "serviceType": "Emergency Service",
+          "category": "Emergency plumbing and heating",
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          },
+          "availableChannel": {
+            "@type": "ServiceChannel",
+            "servicePhone": "+44-7944-280164",
+            "availableLanguage": "English"
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Cardiff" },
+            { "@type": "City", "name": "Penarth" },
+            { "@type": "City", "name": "Barry" },
+            { "@type": "City", "name": "Caerphilly" },
+            { "@type": "City", "name": "Bridgend" },
+            { "@type": "City", "name": "Newport" },
+            { "@type": "Place", "name": "South Wales Valleys" }
+          ],
           "provider": {
             "@type": "LocalBusiness",
             "name": "Warming Us",
-            "address": { "@type": "PostalAddress", "addressRegion": "South Wales" },
-            "email": "Warningus@outlook.com"
+            "telephone": "+44-7944-280164",
+            "email": "Warningus@outlook.com",
+            "address": { "@type": "PostalAddress", "addressRegion": "South Wales", "addressCountry": "GB" }
           }
         }
       }
@@ -101,7 +185,8 @@
   }
   </script>
 
-  <script type="application/ld+json">
+
+    <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -137,10 +222,59 @@
           "@type": "Answer",
           "text": "We cover all of South Wales — Cardiff, Penarth, Barry, Caerphilly, Bridgend, Newport and the Valleys. Free quotes are standard within Cardiff."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "What does a power flush usually cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In most South Wales homes a full system power flush runs £350–£550 depending on the number of radiators, system age and how much sludge has built up. We give you a fixed price after the initial check."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you fit smart thermostats like Hive or Nest?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We install Hive, Nest, Tado and Honeywell controls — either as a stand-alone upgrade or as part of a boiler swap. Wiring and Wi-Fi pairing is included."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a boiler installation take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A like-for-like boiler swap is usually a one-day job. A full heating upgrade — new boiler, controls, system flush and rebalancing — typically runs 1 to 3 days, scheduled in advance so you're not without heat overnight."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you handle CP12 certificates for landlords across Cardiff?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We do CP12 gas safety certificates for landlords across Cardiff, Penarth, Barry, Caerphilly, Bridgend, Newport and the Valleys. The certificate is emailed and posted the same day, and we keep a record on file for re-issue."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which boiler brands do you install?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We install Vaillant, Worcester-Bosch, Baxi, Glow-worm, Ideal and Viessmann. We can match a brand you already have, or recommend the right one for the property and household — and the manufacturer warranty stands when we install it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does my radiator stay cold at the top?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A cold top usually means trapped air — bleeding the radiator fixes it. A cold bottom means sludge sitting in the radiator and the system needs flushing. Either way, we'll diagnose before suggesting a replacement."
+        }
       }
     ]
   }
   </script>
+
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -954,6 +1088,143 @@
 
       .subpage-header h1 { font-size: 2rem; }
     }
+    /* ─── SERVICE DETAIL SECTION ─── */
+    .services-detail-section {
+      padding: 100px 0;
+      background-color: var(--bg-alt);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .services-detail-head {
+      max-width: 760px;
+      margin: 0 auto 64px;
+      text-align: center;
+    }
+    .services-detail-head .eyebrow {
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .services-detail-head h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+    .services-detail-lede {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin: 0 auto;
+      max-width: 60ch;
+    }
+    .service-detail {
+      padding: 56px 0;
+      border-top: 1px solid var(--border);
+      scroll-margin-top: 140px;
+    }
+    .service-detail:first-of-type { border-top: 0; }
+    .service-detail-header {
+      max-width: 720px;
+      margin-bottom: 32px;
+    }
+    .service-detail-eyebrow {
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .service-detail-header h3 {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      letter-spacing: -0.005em;
+    }
+    .service-detail-header h3 a {
+      color: inherit;
+      transition: color 0.2s ease;
+    }
+    .service-detail-header h3 a:hover { color: var(--accent); }
+    .service-detail-header .service-detail-lede {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.75;
+      max-width: 64ch;
+      margin: 0;
+      text-align: left;
+    }
+    .service-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      margin-bottom: 32px;
+    }
+    .service-detail-col h4 {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent);
+      margin: 28px 0 14px;
+    }
+    .service-detail-col h4:first-child { margin-top: 0; }
+    .service-detail-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .service-detail-list li {
+      position: relative;
+      padding: 10px 0 10px 26px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .service-detail-list li:last-child { border-bottom: 0; }
+    .service-detail-list li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    .service-detail-col p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin: 0 0 16px;
+    }
+    .service-detail-col p:last-child { margin-bottom: 0; }
+    .service-detail-cta {
+      margin-top: 8px;
+    }
+    .service-detail--emergency .service-detail-eyebrow,
+    .service-detail--emergency .service-detail-list li::before,
+    .service-detail--emergency .service-detail-col h4 {
+      color: var(--accent);
+    }
+    @media (max-width: 768px) {
+      .services-detail-section { padding: 72px 0; }
+      .service-detail { padding: 40px 0; }
+      .service-detail-grid { grid-template-columns: 1fr; gap: 32px; }
+    }
+
   </style>
 </head>
 <body>
@@ -1025,7 +1296,7 @@
         <div class="services-grid services-grid--detail">
 
           <!-- SERVICE 1 -->
-          <article class="service-card" aria-label="Plumbing and Heating Installation service">
+          <article id="installation" class="service-card" aria-label="Plumbing and Heating Installation service">
             <div class="service-card-media">
               <picture>
                 <source media="(min-width: 768px)" srcset="./images/04_bathroom_result-desktop.webp">
@@ -1048,7 +1319,7 @@
           </article>
 
           <!-- SERVICE 2 -->
-          <article class="service-card" aria-label="Service and Certificates">
+          <article id="certificates" class="service-card" aria-label="Service and Certificates">
             <div class="service-card-media">
               <picture>
                 <source media="(min-width: 768px)" srcset="./images/03_customer_doorstep-desktop.webp">
@@ -1071,7 +1342,7 @@
           </article>
 
           <!-- SERVICE 3 -->
-          <article class="service-card" aria-label="Maintenance and Power Flush service">
+          <article id="maintenance" class="service-card" aria-label="Maintenance and Power Flush service">
             <div class="service-card-media">
               <img src="./images/warming-us-power-flush.webp" alt="Warming Us engineer carrying out a heating system power flush" width="1536" height="1024" loading="lazy" class="service-card-img--powerflush">
             </div>
@@ -1091,7 +1362,7 @@
           </article>
 
           <!-- SERVICE 4 -->
-          <article class="service-card service-card--emergency" aria-label="24/7 Emergency Call Out service">
+          <article id="emergency" class="service-card service-card--emergency" aria-label="24/7 Emergency Call Out service">
             <div class="service-card-media">
               <picture>
                 <source media="(min-width: 768px)" srcset="./images/emergency-callout-1536x1024.webp">
@@ -1116,6 +1387,141 @@
         </div>
       </div>
     </section>
+    <!-- DETAILED SERVICE INFO -->
+    <section class="services-detail-section" aria-label="Detailed service information">
+      <div class="container">
+        <header class="services-detail-head">
+          <p class="eyebrow">In detail</p>
+          <h2>What each job actually covers.</h2>
+          <p class="services-detail-lede">Specifics on the four service families — what's included, the brands we work with, the areas we cover and how long the job typically takes. Anchored so you can link straight to the bit you need.</p>
+        </header>
+
+        <article class="service-detail" aria-labelledby="install-heading">
+          <header class="service-detail-header">
+            <p class="service-detail-eyebrow">Installation</p>
+            <h3 id="install-heading"><a href="#installation">Plumbing &amp; Heating Installation</a></h3>
+            <p class="service-detail-lede">From a single radiator swap to a full heating overhaul. Every installation is quoted in writing before any boards come up — and we stay until commissioning is done properly.</p>
+          </header>
+          <div class="service-detail-grid">
+            <div class="service-detail-col">
+              <h4>What we cover</h4>
+              <ul class="service-detail-list">
+                <li>Combi, system and regular boiler installation</li>
+                <li>Bathroom suite installation from £499</li>
+                <li>Full central heating upgrades and replacements</li>
+                <li>Radiator installation, replacement and rebalancing</li>
+                <li>Smart thermostat fitting (Hive, Nest, Tado, Honeywell)</li>
+                <li>Pipework alterations, first-fix and second-fix plumbing</li>
+                <li>Magnetic filter fitting on every new boiler install</li>
+              </ul>
+            </div>
+            <div class="service-detail-col">
+              <h4>Brands we install</h4>
+              <p>Vaillant, Worcester-Bosch, Baxi, Glow-worm, Ideal and Viessmann — manufacturer warranty stands when we fit it.</p>
+              <h4>Typical timeline</h4>
+              <p>1–3 days for a boiler swap. 3–5 days for a bathroom install. Same-week start across Cardiff and most of South Wales.</p>
+              <h4>Areas we install in</h4>
+              <p>Cardiff, Penarth, Barry, Caerphilly, Bridgend, Newport and the South Wales Valleys.</p>
+            </div>
+          </div>
+          <a href="tel:07944280164" class="btn-cta service-detail-cta">Get an installation quote — 07944 280164</a>
+        </article>
+
+        <article class="service-detail" aria-labelledby="cert-heading">
+          <header class="service-detail-header">
+            <p class="service-detail-eyebrow">Service &amp; Certificates</p>
+            <h3 id="cert-heading"><a href="#certificates">Gas Safety, CP12 &amp; Annual Servicing</a></h3>
+            <p class="service-detail-lede">The annual checks and paperwork landlords, holiday-let owners and conscientious homeowners need — done on time, certificate emailed and posted the same day.</p>
+          </header>
+          <div class="service-detail-grid">
+            <div class="service-detail-col">
+              <h4>What we cover</h4>
+              <ul class="service-detail-list">
+                <li>Landlord gas safety certificate (CP12)</li>
+                <li>Annual boiler service (combi, system or regular)</li>
+                <li>Gas appliance safety check</li>
+                <li>Carbon monoxide alarm test and replacement</li>
+                <li>Pre-tenancy and pre-sale inspections</li>
+                <li>Holiday-let and HMO compliance checks</li>
+              </ul>
+            </div>
+            <div class="service-detail-col">
+              <h4>Who it's for</h4>
+              <p>Homeowners, landlords, letting agents, property managers and holiday-let operators who need a certificate they can hand to a tenant or insurer the same day.</p>
+              <h4>Documentation</h4>
+              <p>Digital and paper certificate copies. We keep a record on file so re-issuing the cert is a phone call, not a re-inspection.</p>
+              <h4>Coverage</h4>
+              <p>Cardiff, Penarth, Barry, Caerphilly, Bridgend, Newport and the wider South Wales Valleys.</p>
+            </div>
+          </div>
+          <a href="tel:07944280164" class="btn-cta service-detail-cta">Book a CP12 or service — 07944 280164</a>
+        </article>
+
+        <article class="service-detail" aria-labelledby="maint-heading">
+          <header class="service-detail-header">
+            <p class="service-detail-eyebrow">Maintenance &amp; Power Flush</p>
+            <h3 id="maint-heading"><a href="#maintenance">Power Flushing, Sludge Removal &amp; Heating Diagnostics</a></h3>
+            <p class="service-detail-lede">Cold radiators, sludge in the system, noisy boilers and weak heat — diagnosed before anything gets replaced. Often what looks like a broken boiler is a blocked one.</p>
+          </header>
+          <div class="service-detail-grid">
+            <div class="service-detail-col">
+              <h4>What we cover</h4>
+              <ul class="service-detail-list">
+                <li>Full system power flush</li>
+                <li>Sludge removal and magnetic filter fitting</li>
+                <li>Radiator balancing across the property</li>
+                <li>Pump, valve and motorised valve replacement</li>
+                <li>Pressure top-ups and expansion vessel checks</li>
+                <li>Cold-spot diagnosis on individual radiators</li>
+                <li>System health checks before a boiler swap</li>
+              </ul>
+            </div>
+            <div class="service-detail-col">
+              <h4>Why it matters</h4>
+              <p>A flushed system runs quieter, heats faster and protects the boiler warranty on a new install. Most "broken" boilers are blocked rather than dead — diagnosis first saves the cost of a replacement that wasn't needed.</p>
+              <h4>Typical pricing</h4>
+              <p>A full power flush in most South Wales homes runs £350–£550, fixed after a quick check on system size and condition.</p>
+              <h4>Coverage</h4>
+              <p>Cardiff, Penarth, Barry, Caerphilly, Bridgend, Newport and the Valleys.</p>
+            </div>
+          </div>
+          <a href="tel:07944280164" class="btn-cta service-detail-cta">Diagnose the system — 07944 280164</a>
+        </article>
+
+        <article class="service-detail service-detail--emergency" aria-labelledby="emerg-heading">
+          <header class="service-detail-header">
+            <p class="service-detail-eyebrow">24/7 Emergency Call Out</p>
+            <h3 id="emerg-heading"><a href="#emergency">Emergency Plumbing &amp; Heating Across South Wales</a></h3>
+            <p class="service-detail-lede">When the heating dies on a Sunday or a pipe goes mid-week, the line answers. We prioritise no-heat, no-water and burst-pipe calls across Cardiff and the wider South Wales area.</p>
+          </header>
+          <div class="service-detail-grid">
+            <div class="service-detail-col">
+              <h4>What we cover</h4>
+              <ul class="service-detail-list">
+                <li>No heat or no hot water</li>
+                <li>Burst pipe and active leak</li>
+                <li>Boiler breakdown, lockout or fault code</li>
+                <li>Frozen condensate pipe</li>
+                <li>Loss of system pressure</li>
+                <li>Carbon monoxide alarm response</li>
+                <li>Tenant emergency call outs for landlords</li>
+              </ul>
+            </div>
+            <div class="service-detail-col">
+              <h4>Response</h4>
+              <p>Within the hour across Cardiff in a genuine emergency; same-day across the Valleys. The phone is the fastest route — call any time.</p>
+              <h4>Charges</h4>
+              <p>Emergency call-out has a fixed visit fee that's quoted on the call. Any repair work is quoted before tools come out — no sliding hourly rates.</p>
+              <h4>Coverage</h4>
+              <p>Cardiff, Penarth, Barry, Caerphilly, Bridgend, Newport and the South Wales Valleys, around the clock.</p>
+            </div>
+          </div>
+          <a href="tel:07944280164" class="btn-cta service-detail-cta">Call now — 07944 280164</a>
+        </article>
+      </div>
+    </section>
+
+
 
     <!-- STATS -->
     <section class="stats-section" aria-label="Company statistics">
@@ -1209,6 +1615,48 @@
               <span class="faq-toggle" aria-hidden="true"></span>
             </summary>
             <p class="faq-a">We cover Cardiff, Penarth, Barry, Caerphilly, Bridgend, Newport, the Valleys and wider South Wales.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">What does a power flush usually cost?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <p class="faq-a">In most South Wales homes a full system power flush runs £350–£550 depending on the number of radiators, system age and how much sludge has built up. We give you a fixed price after the initial check.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">Do you fit smart thermostats like Hive or Nest?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <p class="faq-a">Yes. We install Hive, Nest, Tado and Honeywell controls — either as a stand-alone upgrade or as part of a boiler swap. Wiring and Wi-Fi pairing are included.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">How long does a boiler installation take?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <p class="faq-a">A like-for-like boiler swap is usually a one-day job. A full heating upgrade — new boiler, controls, system flush and rebalancing — typically runs 1 to 3 days, scheduled in advance so you're not without heat overnight.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">Do you handle CP12 certificates for landlords across Cardiff?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <p class="faq-a">Yes. We do CP12 gas safety certificates for landlords across Cardiff, Penarth, Barry, Caerphilly, Bridgend, Newport and the Valleys. The certificate is emailed and posted the same day, and we keep a record on file for re-issue.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">Which boiler brands do you install?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <p class="faq-a">We install Vaillant, Worcester-Bosch, Baxi, Glow-worm, Ideal and Viessmann. We can match a brand you already have, or recommend the right one for the property and household — and the manufacturer warranty stands when we install it.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">Why does my radiator stay cold at the top?</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <p class="faq-a">A cold top usually means trapped air — bleeding the radiator fixes it. A cold bottom means sludge sitting in the radiator and the system needs flushing. Either way we'll diagnose before suggesting a replacement.</p>
           </details>
         </div>
       </div>
