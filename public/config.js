@@ -61,7 +61,7 @@ const SCHEMA = {
         value3_desc: 'Boilers, bathrooms, gas certificates, servicing and power flushing are handled by experienced engineers.',
         team_title: 'Our Team',
         team_description: 'A local South Wales team, not a call centre. The same engineers quote, explain the work and carry it through to sign-off.',
-        image: './images/warming-us-team.webp'
+        image: './images/team-workshop-1200x1200.webp'
       }
     },
 
