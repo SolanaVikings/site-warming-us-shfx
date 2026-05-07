@@ -12,7 +12,7 @@ const SCHEMA = {
   business: {
     name: 'Warming Us',
     tagline: 'Plumbers & heating engineers in South Wales',
-    email: 'Warningus@outlook.com',
+    email: 'Warmingus@outlook.com',
     phone: '07944280164',
     address: 'South Wales',
     founded: '2012',
@@ -99,7 +99,7 @@ const SCHEMA = {
         headline: 'Contact Warming Us',
         description: 'Need a plumber or heating engineer in South Wales? Call for emergencies, boiler work, servicing or a free Cardiff quote.',
         phone: '07944280164',
-        email: 'Warningus@outlook.com',
+        email: 'Warmingus@outlook.com',
         address: 'South Wales',
         hours_title: 'Availability',
         hours: 'Available 24/7 — Emergency call outs any time',
