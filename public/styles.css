@@ -631,12 +631,12 @@ h3 { font-size: var(--h3); font-weight: 600; }
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--accent);
-  transition: letter-spacing var(--transition);
+  transition: opacity var(--transition);
   text-decoration: none;
   margin-top: auto;
 }
 
-.service-link:hover { letter-spacing: 0.16em; }
+.service-link:hover { opacity: 0.75; }
 
 /* ============================================================
    ABOUT TEASER
