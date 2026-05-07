@@ -26,9 +26,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"></noscript>
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
 
   <style>
     /* ── Reset & Base ── */
@@ -904,7 +906,7 @@
   <!-- ── NAV ── -->
   <header class="site-nav" role="banner">
     <nav class="nav-inner container" aria-label="Main navigation">
-      <a href="/" class="nav-logo" aria-label="Warming Us – Home"><img src="./images/warming-us-logo-light.png" alt="Warming Us" class="nav-logo-img" width="140" height="38"></a>
+      <a href="/" class="nav-logo" aria-label="Warming Us – Home"><picture><source srcset="./images/warming-us-logo-light.webp" type="image/webp"><img src="./images/warming-us-logo-light.png" alt="Warming Us" class="nav-logo-img" width="140" height="38"></picture></a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
         <span></span><span></span><span></span>
       </button>

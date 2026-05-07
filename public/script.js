@@ -2,12 +2,6 @@
 // Client Site - Content Loading
 // ============================================
 
-// Initialize Supabase
-let supabaseClient = null;
-if (window.CONFIG && CONFIG.SUPABASE_URL !== 'YOUR_SUPABASE_URL') {
-    supabaseClient = window.supabase.createClient(CONFIG.SUPABASE_URL, CONFIG.SUPABASE_ANON_KEY);
-}
-
 // Load content on page load
 document.addEventListener('DOMContentLoaded', loadSiteContent);
 
